@@ -19,4 +19,11 @@ Tecnologías utilizadas:
 -JavaScript para la lógica y funcionalidad de la aplicación
 -Biblioteca SweetAlert para mostrar alertas personalizadas</p1>
 
-Estado del proyecto: En Construcción
+<h2>Estado del proyecto</h2>
+
+En Construcción
+
+<h2>Figma del proyecto</h2>
+
+https://www.figma.com/design/PqL3amgkOMon80aVuCkHAN/Encryptexter?node-id=0-1&t=EANMPYLOhTe7Pxkc-0
+
