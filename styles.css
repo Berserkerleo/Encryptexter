@@ -10,3 +10,26 @@
     --font-title: 'Anton', sans-serif;
     --font-footer: 'Pacifico', cursive;
 }
+
+* {
+    /* Reset CSS básico */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Estilos generales del cuerpo */
+    font-family: var(--font-main);
+    background: var(--color-background);
+}
+
+.header {
+    /* Estilos del encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-header);
+    color: white;
+}
