@@ -33,3 +33,29 @@ body {
     background-color: var(--color-header);
     color: white;
 }
+
+.header__contenedor__logo {
+    /* Contenedor del logo y título */
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    /* Estilos del logo */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header__titulo {
+    /* Estilos del título principal */
+    font-family: var(--font-title);
+    font-size: 36px;
+}
+
+.header__redes__sociales {
+    /* Estilos de los enlaces de redes sociales */
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+}
