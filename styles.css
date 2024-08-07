@@ -1,1 +1,12 @@
-
+:root {
+    /* Variables CSS para colores y fuentes */
+    --color-background: #7AA451;
+    --color-input-bg: #B7F1B2;
+    --color-header: #225E0C;
+    --color-footer: #D9D9D9;
+    --color-btn-encrypt: #09500B;
+    --color-btn-decrypt: #80F86C;
+    --font-main: 'Inter', sans-serif;
+    --font-title: 'Anton', sans-serif;
+    --font-footer: 'Pacifico', cursive;
+}
