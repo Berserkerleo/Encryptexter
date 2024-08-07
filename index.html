@@ -37,12 +37,38 @@
             <!-- Cita introductoria -->
             <p class="seccion__encriptar__cita">"Las palabras están diseñadas para ocultar el pensamiento, no para revelarlo." – Aldous Huxley</p>
             <!-- Área de texto para entrada de usuario con etiqueta de accesibilidad -->
-            <textarea name="texto" class="seccion__encriptar__entrada" id="encryptInput" cols="50" rows="10" placeholder="Ingresa tu texto aquí" aria-label="Área de texto para encriptar o desencriptar"></textarea>
+            <textarea name="texto" class="seccion__encriptar__entrada" id="encriptarEntrada" cols="50" rows="10" placeholder="Ingresa tu texto aquí" aria-label="Área de texto para encriptar o desencriptar"></textarea>
             <!-- Aviso sobre restricciones de texto -->
-            <div class="encrypt-section__terms">
-                <span class="encrypt-section__info-icon" aria-hidden="true">&#9888;</span>
+            <div class="seccion__encriptar__advertencias">
+                <span class="seccion__encriptar__icono_advertencia" aria-hidden="true">&#9888;</span>
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
+            <!-- Botones de encriptación y desencriptación -->
+            <div class="seccion__encriptar__botones">
+                <button class="seccion__encriptar__btn_basico seccion__encriptar__btn_encriptar" type="button">
+                    Encriptar
+                </button>
+                <button class="seccion__encriptar__btn_basico seccion__encriptar__btn_desencriptar" type="button">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+
+        <!-- Sección de resultados -->
+        <section class="seccion__resultado">
+            <!-- Imagen de resultado (cambia según el estado) -->
+            <img src="assets/NoFound.png" alt="Imagen de resultado" id="imagenResultado" class="seccion__resultado__imagen" />
+            <!-- Mensaje de resultado -->
+            <div class="seccion__resultado__mensaje" id="mensajeResultado">
+                <h2 id="tituloResultado" class="seccion__resultado__titulo">Parece que no hay nada aquí</h2>
+                <p id="parrafoResultado" class="seccion__resultado__parrafo">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </div>
+        </section>
     </main>
+
+
 </body>
 </html>
+
