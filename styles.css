@@ -173,3 +173,55 @@ body {
     border: 1px solid #09500B;
 }
 
+.seccion__resultado {
+    /* Estilos de la sección de resultados */
+    width: 30%;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__resultado__imagen {
+    /* Estilos de la imagen de resultado */
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.seccion__resultado__mensaje {
+    /* Estilos del mensaje de resultado */
+    text-align: center;
+}
+
+.seccion__resultado__titulo {
+    /* Estilos del título de resultado */
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #343A40;
+}
+
+.seccion__resultado__parrafo {
+    /* Estilos del párrafo de resultado */
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+}
+
+.footer {
+    /* Estilos del pie de página */
+    background-color: var(--color-footer);
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: var(--font-footer);
+}
