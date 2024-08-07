@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos y configuración del documento -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encryptexter</title>
-    <!-- Ícono de la página -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="styles.css" />
@@ -19,49 +21,50 @@
     <!-- Encabezado de la página -->
     <header class="header">
         <!-- Contenedor del logo y título -->
-        <div class="header__contenedor__logo">
+        <div class="header__logo-container">
             <img src="assets/logo.png" alt="Encryptexter logo" class="header__logo">
-            <h1 class="header__titulo">Encryptexter</h1>
+            <h1 class="header__title">Encryptexter</h1>
         </div>
         <!-- Enlaces a redes sociales con etiquetas de accesibilidad -->
-        <div class="header__redes__sociales">
+        <div class="header__social-links">
             <a href="https://www.instagram.com/leoe_garciarod" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/Berserkerleo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/leandrogarciarod/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
     </header>
 
-    <main class="contenedor__principal">
+    <!-- Contenedor principal -->
+    <main class="main-container">
         <!-- Sección de encriptación -->
-        <section class="seccion__encriptar">
+        <section class="encrypt-section">
             <!-- Cita introductoria -->
-            <p class="seccion__encriptar__cita">"Las palabras están diseñadas para ocultar el pensamiento, no para revelarlo." – Aldous Huxley</p>
+            <p class="encrypt-section__label">"Las palabras están diseñadas para ocultar el pensamiento, no para revelarlo." – Aldous Huxley</p>
             <!-- Área de texto para entrada de usuario con etiqueta de accesibilidad -->
-            <textarea name="texto" class="seccion__encriptar__entrada" id="encryptInput" cols="50" rows="10" placeholder="Ingresa tu texto aquí" aria-label="Área de texto para encriptar o desencriptar"></textarea>
+            <textarea name="texto" class="encrypt-section__input" id="encryptInput" cols="50" rows="10" placeholder="Ingresa tu texto aquí" aria-label="Área de texto para encriptar o desencriptar"></textarea>
             <!-- Aviso sobre restricciones de texto -->
-            <div class="seccion__encriptar__advertencias">
-                <span class="seccion__encriptar__icono_advertencia" aria-hidden="true">&#9888;</span>
+            <div class="encrypt-section__terms">
+                <span class="encrypt-section__info-icon" aria-hidden="true">&#9888;</span>
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
             <!-- Botones de encriptación y desencriptación -->
-            <div class="seccion__encriptar__botones">
-                <button class="seccion__encriptar__btn_basico seccion__encriptar__btn_encriptar" type="button">
+            <div class="encrypt-section__buttons">
+                <button class="encrypt-section__btn encrypt-section__btn--encrypt" type="button">
                     Encriptar
                 </button>
-                <button class="seccion__encriptar__btn_basico seccion__encriptar__btn_desencriptar" type="button">
+                <button class="encrypt-section__btn encrypt-section__btn--decrypt" type="button">
                     Desencriptar
                 </button>
             </div>
         </section>
 
         <!-- Sección de resultados -->
-        <section class="seccion__resultado">
+        <section class="result-section">
             <!-- Imagen de resultado (cambia según el estado) -->
-            <img src="assets/NoFound.png" alt="Imagen de resultado" id="imagenResultado" class="seccion__resultado__imagen" />
+            <img src="assets/NoFound.png" alt="Imagen de resultado" id="resultImage" class="result-section__image" />
             <!-- Mensaje de resultado -->
-            <div class="seccion__resultado__mensaje" id="mensajeResultado">
-                <h2 id="tituloResultado" class="seccion__resultado__titulo">Parece que no hay nada aquí</h2>
-                <p id="parrafoResultado" class="seccion__resultado__parrafo">
+            <div class="result-section__message" id="resultMessage">
+                <h2 id="resultTitle" class="result-section__title">Parece que no hay nada aquí</h2>
+                <p id="resultParagraph" class="result-section__paragraph">
                     Ingresa el texto que desees encriptar o desencriptar.
                 </p>
             </div>
@@ -72,12 +75,10 @@
     <footer class="footer">
         <p>Desarrollado por Leandro Garcia</p>
         <!-- El año se llena dinámicamente con JavaScript -->
-        <p id="año"></p>
+        <p id="year"></p>
     </footer>
 
     <!-- Script principal de JavaScript -->
     <script src="app.js"></script>
-
 </body>
 </html>
-

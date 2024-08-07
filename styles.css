@@ -34,7 +34,7 @@ body {
     color: white;
 }
 
-.header__contenedor__logo {
+.header__logo-container {
     /* Contenedor del logo y título */
     display: flex;
     align-items: center;
@@ -46,13 +46,13 @@ body {
     margin-right: 10px;
 }
 
-.header__titulo {
+.header__title {
     /* Estilos del título principal */
     font-family: var(--font-title);
     font-size: 36px;
 }
 
-.header__redes__sociales {
+.header__social-links a {
     /* Estilos de los enlaces de redes sociales */
     color: white;
     font-size: 20px;
@@ -60,7 +60,7 @@ body {
     text-decoration: none;
 }
 
-.contenedor__principal{
+.main-container {
     /* Contenedor principal */
     display: flex;
     justify-content: space-between;
@@ -68,7 +68,7 @@ body {
     height: calc(100vh - 140px);
 }
 
-.seccion__encriptar {
+.encrypt-section {
     /* Sección de encriptación */
     width: 60%;
     display: flex;
@@ -76,7 +76,7 @@ body {
     align-items: center;
 }
 
-.seccion__encriptar__cita{
+.encrypt-section__label {
     /* Estilos de la cita */
     font-size: 36px;
     margin-bottom: 10px;
@@ -84,7 +84,7 @@ body {
     font-weight: bold;
 }
 
-.seccion__encriptar__entrada{
+.encrypt-section__input {
     /* Estilos del área de texto */
     width: 100%;
     height: 400px;
@@ -101,27 +101,26 @@ body {
     border-radius: 34px;
 }
 
-.seccion__encriptar__entrada::placeholder {
+.encrypt-section__input::placeholder {
     /* Estilos del placeholder del área de texto */
     color: #225E0C;
 }
 
-.seccion__encriptar__entrada:focus,
-.seccion__encriptar__entrada:active {
+.encrypt-section__input:focus,
+.encrypt-section__input:active {
     /* Estilos al enfocar o activar el área de texto */
     border: none;
     outline: none;
 }
 
-.seccion__encriptar__advertencias {
+.encrypt-section__terms {
     /* Estilos del contenedor de términos */
     margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
 
-
-.seccion__encriptar__icono_advertencia {
+.encrypt-section__info-icon {
     /* Estilos del icono de información */
     display: inline-flex;
     justify-content: center;
@@ -135,13 +134,13 @@ body {
     margin-right: 10px;
 }
 
-.seccion__encriptar__icono_advertencia p {
+.encrypt-section__terms p {
     /* Estilos del texto de términos */
-    font-size: 14px;
+    font-size: 12px;
     color: #495057;
 }
 
-.seccion__encriptar__botones {
+.encrypt-section__buttons {
     /* Contenedor de botones */
     display: flex;
     gap: 10px;
@@ -149,7 +148,7 @@ body {
     width: 100%;
 }
 
-.seccion__encriptar__btn_basico {
+.encrypt-section__btn {
     /* Estilos base de los botones */
     padding: 15px;
     width: 25%;
@@ -159,21 +158,21 @@ body {
     border: 1px solid #09500B;
 }
 
-.seccion__encriptar__btn_encriptar {
+.encrypt-section__btn--encrypt {
     /* Estilos específicos del botón de encriptar */
     background-color: var(--color-btn-encrypt);
     color: #FFFFFF;
     border: none;
 }
 
-.seccion__encriptar__btn_desencriptar {
+.encrypt-section__btn--decrypt {
     /* Estilos específicos del botón de desencriptar */
     background-color: var(--color-btn-decrypt);
     color: #225E0C;
     border: 1px solid #09500B;
 }
 
-.seccion__resultado {
+.result-section {
     /* Estilos de la sección de resultados */
     width: 30%;
     background: white;
@@ -186,18 +185,18 @@ body {
     align-items: center;
 }
 
-.seccion__resultado__imagen {
+.result-section__image {
     /* Estilos de la imagen de resultado */
     max-width: 70%;
     margin-bottom: 20px;
 }
 
-.seccion__resultado__mensaje {
+.result-section__message {
     /* Estilos del mensaje de resultado */
     text-align: center;
 }
 
-.seccion__resultado__titulo {
+.result-section__title {
     /* Estilos del título de resultado */
     font-family: var(--font-main);
     font-weight: 700;
@@ -206,7 +205,7 @@ body {
     color: #343A40;
 }
 
-.seccion__resultado__parrafo {
+.result-section__paragraph {
     /* Estilos del párrafo de resultado */
     font-family: var(--font-main);
     font-weight: 400;
@@ -225,7 +224,6 @@ body {
     width: 100%;
     font-family: var(--font-footer);
 }
-
 
 /* Media query para diseño responsivo */
 @media (max-width: 768px) {
