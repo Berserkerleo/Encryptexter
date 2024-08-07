@@ -59,3 +59,20 @@ body {
     margin-left: 15px;
     text-decoration: none;
 }
+
+.contenedor__principal{
+    /* Contenedor principal */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 140px);
+}
+
+.seccion__encriptar {
+    /* Sección de encriptación */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
