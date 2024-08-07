@@ -34,7 +34,15 @@
     <main class="contenedor__principal">
         <!-- Sección de encriptación -->
         <section class="seccion__encriptar">
-
+            <!-- Cita introductoria -->
+            <p class="seccion__encriptar__cita">"Las palabras están diseñadas para ocultar el pensamiento, no para revelarlo." – Aldous Huxley</p>
+            <!-- Área de texto para entrada de usuario con etiqueta de accesibilidad -->
+            <textarea name="texto" class="seccion__encriptar__entrada" id="encryptInput" cols="50" rows="10" placeholder="Ingresa tu texto aquí" aria-label="Área de texto para encriptar o desencriptar"></textarea>
+            <!-- Aviso sobre restricciones de texto -->
+            <div class="encrypt-section__terms">
+                <span class="encrypt-section__info-icon" aria-hidden="true">&#9888;</span>
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
     </main>
 </body>
 </html>

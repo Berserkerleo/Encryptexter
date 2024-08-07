@@ -76,3 +76,27 @@ body {
     align-items: center;
 }
 
+.seccion__encriptar__cita{
+    /* Estilos de la cita */
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.seccion__encriptar__entrada{
+    /* Estilos del área de texto */
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: var(--color-input-bg);
+    resize: none;
+    padding: 20px;
+    border-radius: 34px;
+}
