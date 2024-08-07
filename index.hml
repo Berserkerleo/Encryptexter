@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encryptexter</title>
 </head>
 <body>
+    <!-- Encabezado de la página -->
+    <header class="header">
+        <!-- Contenedor del logo y título -->
+        <div class="header__logo-container">
+            <img src="assets/logo.png" alt="Encryptexter logo" class="header__logo">
+            <h1 class="header__title">Encryptexter</h1>
+        </div>
     
 </body>
 </html>
