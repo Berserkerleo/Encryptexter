@@ -1,84 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos y configuración del documento -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encryptexter</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
-    <!-- Hoja de estilos CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Fuentes de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Script de SweetAlert para alertas personalizadas -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado de la página -->
     <header class="header">
-        <!-- Contenedor del logo y título -->
         <div class="header__logo-container">
             <img src="assets/logo.png" alt="Encryptexter logo" class="header__logo">
-            <h1 class="header__title">Encryptexter</h1>
+            <h1 id="encryptexter" class="header__title">Encryptexter</h1>
         </div>
-        <!-- Enlaces a redes sociales con etiquetas de accesibilidad -->
+
         <div class="header__social-links">
-            <a href="https://www.instagram.com/leoe_garciarod" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/Berserkerleo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/leandrogarciarod/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/leoe_garciarod" target="_blank" aria-label="Instagram"></a>
+            <a href="https://github.com/Berserkerleo" target="_blank" aria-label="GitHub"></a>
+            <a href="https://www.linkedin.com/in/leandrogarciarod/" target="_blank" aria-label="LinkedIn"></a>
         </div>
     </header>
 
-    <!-- Contenedor principal -->
-    <main class="main-container">
-        <!-- Sección de encriptación -->
-        <section class="encrypt-section">
-            <!-- Cita introductoria -->
-            <p class="encrypt-section__label">"Las palabras están diseñadas para ocultar el pensamiento, no para revelarlo." – Aldous Huxley</p>
-            <!-- Área de texto para entrada de usuario con etiqueta de accesibilidad -->
-            <textarea name="texto" class="encrypt-section__input" id="encryptInput" cols="50" rows="10" placeholder="Ingresa tu texto aquí" aria-label="Área de texto para encriptar o desencriptar"></textarea>
-            <!-- Aviso sobre restricciones de texto -->
+    <div class="main-container" role="main">
+        <div class="section encrypt-section">
+            <p class="encrypt-section__label">"Las palabras están diseñadas para ocultar el pensamiento, no para revelarlo." -- Aldous Huxley</p>
+            
+            <textarea id="encryptInput" class="encrypt-section__input" placeholder="Ingresa tu texto aquí"></textarea>
+            
             <div class="encrypt-section__terms">
-                <span class="encrypt-section__info-icon" aria-hidden="true">&#9888;</span>
+                <span class="encrypt-section__info-icon" aria-hidden="true">⚠</span>
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
-            <!-- Botones de encriptación y desencriptación -->
+            
             <div class="encrypt-section__buttons">
-                <button class="encrypt-section__btn encrypt-section__btn--encrypt" type="button">
-                    Encriptar
-                </button>
-                <button class="encrypt-section__btn encrypt-section__btn--decrypt" type="button">
-                    Desencriptar
-                </button>
+                <button class="encrypt-section__btn encrypt-section__btn--encrypt">Encriptar</button>
+                <button class="encrypt-section__btn encrypt-section__btn--decrypt">Desencriptar</button>
             </div>
-        </section>
+        </div>
 
-        <!-- Sección de resultados -->
-        <section class="result-section">
-            <!-- Imagen de resultado (cambia según el estado) -->
-            <img src="assets/NoFound.png" alt="Imagen de resultado" id="resultImage" class="result-section__image" />
-            <!-- Mensaje de resultado -->
-            <div class="result-section__message" id="resultMessage">
+        <div class="section result-section">
+            <img id="resultImage" src="assets/NoFound.png" alt="Imagen de resultado" class="result-section__image">
+            
+            <div id="resultMessage" class="result-section__message">
                 <h2 id="resultTitle" class="result-section__title">Parece que no hay nada aquí</h2>
-                <p id="resultParagraph" class="result-section__paragraph">
-                    Ingresa el texto que desees encriptar o desencriptar.
-                </p>
+                <p id="resultParagraph" class="result-section__paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <!-- Pie de página -->
     <footer class="footer">
-        <p>Desarrollado por Leandro Garcia</p>
-        <!-- El año se llena dinámicamente con JavaScript -->
-        <p id="year"></p>
+        Desarrollado por Leandro Garcia
+        <span id="year"></span>
     </footer>
 
-    <!-- Script principal de JavaScript -->
     <script src="app.js"></script>
 </body>
 </html>
