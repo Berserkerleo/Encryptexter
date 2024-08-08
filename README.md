@@ -27,7 +27,7 @@ Encryptexter es una aplicación web de código abierto que permite encriptar y d
 
 <h2>Estado del proyecto</h2>
 
-En Construcción
+Finalizado
 
 <h2>Figma del proyecto</h2>
 
