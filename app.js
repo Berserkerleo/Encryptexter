@@ -11,11 +11,13 @@ function procesarTexto(isEncrypt) {
     const tituloResultado = document.getElementById("resultTitle");
     const parrafoResultado = document.getElementById("resultParagraph");
     const imagenResultado = document.getElementById("resultImage");
+    const copyButton = document.getElementById("copyButton");
 
     const texto = inputElement.value.toLowerCase();
 
     if (!texto) {
         mostrarError(tituloResultado, parrafoResultado, imagenResultado);
+        copyButton.style.display = 'none';
         return;
     }
 
@@ -23,9 +25,11 @@ function procesarTexto(isEncrypt) {
         const textoProcessed = isEncrypt ? encriptar(texto) : desencriptar(texto);
         inputElement.value = textoProcessed;
         mostrarResultado(isEncrypt, tituloResultado, parrafoResultado, imagenResultado);
+        copyButton.style.display = 'block';
     } catch (error) {
         console.error('Error al procesar el texto:', error);
         alert("Error: Hubo un problema al procesar el texto");
+        copyButton.style.display = 'none';
     }
 }
 
@@ -53,9 +57,18 @@ function mostrarError(titulo, parrafo, imagen) {
     alert("Vaya! Debes ingresar un texto");
 }
 
+function copiarTexto() {
+    const inputElement = document.getElementById("encryptInput");
+    inputElement.select();
+    document.execCommand('copy');
+    alert('Texto copiado al portapapeles');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('year').textContent = new Date().getFullYear();
     
     document.querySelector('.encrypt-section__btn--encrypt').addEventListener('click', () => procesarTexto(true));
     document.querySelector('.encrypt-section__btn--decrypt').addEventListener('click', () => procesarTexto(false));
+    
+    document.getElementById('copyButton').addEventListener('click', copiarTexto);
 });
