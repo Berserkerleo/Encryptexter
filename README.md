@@ -48,3 +48,7 @@ Si deseas contribuir a este proyecto, por favor, crea un fork del repositorio y 
 <h2>Problemas</h2>
 
 Si encuentras algún problema o error en la aplicación, por favor, crea un issue en el repositorio y estaré encantado de ayudarte.
+
+<h2>Próximas mejoras</h2>
+
+Se planea incluir botón de limpiar el campo de texto.
